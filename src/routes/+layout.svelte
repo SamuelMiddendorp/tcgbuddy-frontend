@@ -245,6 +245,25 @@
             transform: rotateY(0deg);
         }
     }
+    @keyframes gradient {
+0% {
+background-position: 0% 50%;
+}
+
+50% {
+    background-position: 100% 50%;
+}
+
+100% {
+background-position: 0% 50%;
+}
+}
+    body {
+    height: 100vh;
+background: linear-gradient(-45deg, #8000ff22, #330b4d, #3d0d57, #430b3f);
+background-size: 350% 350%;
+animation: gradient 15s ease infinite;
+}
     .layout-container {
         display: grid;
         grid-template-columns: max-content 1fr;
