@@ -217,6 +217,11 @@
                     </g>
                 </svg>
             </div>
+            <div class="session-controls">
+                <a href="/">Profile</a>
+                <a href="/">Help</a>
+                <a href="/">Logout</a>
+            </div>
         </div>
         <div class="function-navigator" />
         <div class="main-content">
@@ -226,6 +231,11 @@
 </body>
 
 <style>
+    :root{
+        --main-text-color: #efefef;
+        --main-link-color: #efefef;
+        --border-radius: 0.4em;
+    }
     @keyframes example {
         from {
             transform: translate(1vh, 12vh);
@@ -246,24 +256,34 @@
         }
     }
     @keyframes gradient {
-0% {
-background-position: 0% 50%;
-}
+        0% {
+            background-position: 0% 50%;
+        }
 
-50% {
-    background-position: 100% 50%;
-}
+        50% {
+            background-position: 100% 50%;
+        }
 
-100% {
-background-position: 0% 50%;
-}
-}
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: var(--main-link-color);
+    }
     body {
-    height: 100vh;
-background: linear-gradient(-45deg, #8000ff22, #330b4d, #3d0d57, #430b3f);
-background-size: 350% 350%;
-animation: gradient 15s ease infinite;
-}
+        height: 100vh;
+        background: linear-gradient(
+            -45deg,
+            #8000ff22,
+            #330b4d,
+            #3d0d57,
+            #430b3f
+        );
+        background-size: 350% 350%;
+        animation: gradient 15s ease infinite;
+    }
     .layout-container {
         display: grid;
         grid-template-columns: max-content 1fr;
