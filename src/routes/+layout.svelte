@@ -18,7 +18,11 @@ import './layout.css';
                 <a href="/">Logout</a>
             </div>
         </div>
-        <div class="function-navigator" />
+        <div class="function-navigator">
+                <a href="/">Cards</a>
+                <a href="/">Decks</a>
+                <a href="/">News</a>
+        </div>
         <div class="main-content">
             <slot />
         </div>
