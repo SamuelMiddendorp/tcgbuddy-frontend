@@ -1,4 +1,5 @@
 <script lang="ts">
+    import './layout.css';
 </script>
 
 <svelte:head>
@@ -230,75 +231,3 @@
     </div>
 </body>
 
-<style>
-    :root{
-        --main-text-color: #efefef;
-        --main-link-color: #efefef;
-        --border-radius: 0.4em;
-    }
-    @keyframes example {
-        from {
-            transform: translate(1vh, 12vh);
-        }
-        to {
-            transform: translate(0, 0);
-        }
-    }
-    @keyframes swoosh {
-        0% {
-            transform: rotateY(0deg);
-        }
-        50% {
-            transform: rotateY(40deg);
-        }
-        100% {
-            transform: rotateY(0deg);
-        }
-    }
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-
-        50% {
-            background-position: 100% 50%;
-        }
-
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-    a{
-        text-decoration: none;
-        color: var(--main-link-color);
-    }
-    body {
-        height: 100vh;
-        background: linear-gradient(
-            -45deg,
-            #8000ff22,
-            #330b4d,
-            #3d0d57,
-            #430b3f
-        );
-        background-size: 350% 350%;
-        animation: gradient 15s ease infinite;
-    }
-    .layout-container {
-        display: grid;
-        grid-template-columns: max-content 1fr;
-        grid-template-rows: max-content 1fr;
-    }
-    .logo-card {
-        stroke: #fff;
-        transform-box: fill-box;
-        transform: translate(1vh, 12vh);
-        animation-name: example, swoosh;
-        animation-timing-function: ease;
-        transform-origin: center;
-        animation-duration: 0.5s;
-        animation-delay: calc(var(--animation-order) * 120ms),
-            calc(1200ms + (var(--animation-order) * 35ms));
-        animation-fill-mode: forwards, forwards;
-    }
-</style>
