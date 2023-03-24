@@ -10,7 +10,7 @@ import './layout.css';
             panelOpen = !panelOpen;
             return;
         }
-        elem.style.maxWidth = "6em";
+        elem.style.maxWidth = "12em";
         panelOpen = !panelOpen;
     }
 </script>
@@ -31,9 +31,12 @@ import './layout.css';
             </div>
         </div>
         <div class="function-navigator panel" on:click={() => togglePanel()}>
-                <a href="/">Cards</a>
-                <a href="/">Decks</a>
-                <a href="/">News</a>
+                <a href="/">CARDS</a>
+                <a href="/">DECKS</a>
+                <a href="/">WISHLISTS</a>
+                <a href="/">LGS CORNER</a>
+                <a href="/">NEWS</a>
+                <a href="/">CARD OF THE DAY</a>
         </div>
         <div class="main-content panel">
             <slot />
