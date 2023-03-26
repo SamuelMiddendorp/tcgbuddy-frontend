@@ -6,7 +6,7 @@
         --grid-gap: 1.4em;
         --statement-color: #8200FF;
         --background: #090012;
-        --outer-panel-color: #A8030005;
+        --outer-panel-color: #13061F;
 
     }
     @keyframes gradient {
@@ -23,6 +23,12 @@
         }
     }
     @media only screen and (max-width: 720px) {
+        :root{
+            --grid-gap: 0.4em;
+        }
+        .main-content{
+            margin-left: var(--grid-gap) !important;
+        }
         .function-navigator{
             background-color: #8200FF !important;
             margin: 0 !important;
@@ -31,6 +37,7 @@
             grid-template-rows: 1fr;
             justify-items: space-around;
             grid-template-columns: repeat(5, 1fr);
+            border-radius: 0 !important;
             bottom: 0px;
             left: 0px;
         }
