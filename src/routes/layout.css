@@ -87,6 +87,7 @@
     }
     .function-navigator{
         display: grid;
+        margin-right: 0 !important; 
         align-content: flex-start;
         overflow: hidden;
         transition: all 0.4s ease-in-out;
@@ -121,7 +122,6 @@
     }
     .main-content{
         padding: 1em;
-        margin-left: 0 !important;
         grid-column: 2/3;
         grid-row: 2/3;
     }
