@@ -1,5 +1,6 @@
 <script lang="ts">
-    import Logo from "../lib/components/Logo.svelte";
+    import ThemeSelector from "$lib/components/ThemeSelector.svelte";
+import Logo from "../lib/components/Logo.svelte";
     import "./layout.css";
     let panelOpen: boolean = true;
 
@@ -193,4 +194,5 @@
             <slot />
         </div>
     </div>
+    <ThemeSelector/>
 </body>
