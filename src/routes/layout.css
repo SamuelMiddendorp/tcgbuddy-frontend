@@ -3,10 +3,10 @@
         --main-text-color: #efefef;
         --main-link-color: #efefef;
         --border-radius: 0.4em;
-        --grid-gap: 1.4em;
-        --statement-color: #8200FF;
-        --background: #090012;
-        --outer-panel-color: #13061F;
+        --grid-gap: 1.0em;
+        --statement-color: #8200ff;
+        --background: #111;
+        --outer-panel-color: #222;
 
     }
     @keyframes gradient {
@@ -60,11 +60,6 @@
     .layout-container {
         font-family: 'Ubuntu mono', monospace; 
         height: 100vh;
-        background: linear-gradient(
-            -45deg,
-            #222,
-            --var(background)
-        );
         background-color: #111;
         background-size: 350% 350%;
         animation: gradient 15s ease infinite;
