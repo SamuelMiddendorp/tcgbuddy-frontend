@@ -13,10 +13,10 @@
             <g style="--animation-order: 1;" class="logo-card">
                 <g
                     transform="rotate(-22.465404,315.79465,219.27291)"
-                    stroke="#fff"
                     stroke-linecap="round"
                 >
                     <rect
+                        class="card-rect"
                         transform="matrix(.99728658 -.07361709 .08270235 .99657429 0 0)"
                         x="124.39651"
                         y="70.804893"
@@ -37,10 +37,10 @@
                 <g
                     id="2"
                     transform="rotate(-12.490498,482.3121,296.34774)"
-                    stroke="#fff"
                     stroke-linecap="round"
                 >
                     <rect
+                        class="card-rect"
                         transform="matrix(.99717663 -.07509177 .08122632 .99669568 0 0)"
                         x="123.93652"
                         y="70.635574"
@@ -60,10 +60,10 @@
             <g style="--animation-order: 3;" class="logo-card">
                 <g
                     transform="rotate(-5.3561788,985.79619,509.78039)"
-                    stroke="#fff"
                     stroke-linecap="round"
                 >
                     <rect
+                        class="card-rect"
                         transform="matrix(.99707745 -.07639732 .07991038 .99680205 0 0)"
                         x="123.245"
                         y="70.404594"
@@ -83,10 +83,10 @@
             <g style="--animation-order: 4;" class="logo-card">
                 <g
                     transform="rotate(-1.1544268,4138.8822,1726.2435)"
-                    stroke="#fff"
                     stroke-linecap="round"
                 >
                     <rect
+                        class="card-rect"
                         transform="matrix(.99701346 -.07722793 .07907094 .99686899 0 0)"
                         x="122.11452"
                         y="70.512299"
@@ -106,11 +106,11 @@
             <g style="--animation-order: 5;" class="logo-card">
                 <g
                     transform="rotate(5.297904,-761.71977,-214.2634)"
-                    stroke="#fff"
                     stroke-linecap="round"
                     stroke-width=".600001"
                 >
                     <rect
+                        class="card-rect"
                         transform="matrix(.99691062 -.07854438 .07773899 .99697375 0 0)"
                         x="121.56647"
                         y="70.721954"
@@ -129,11 +129,11 @@
             <g style="--animation-order: 6;" class="logo-card">
                 <g
                     transform="rotate(9.1990472,-391.25002,-54.21378)"
-                    stroke="#fff"
                     stroke-linecap="round"
                     stroke-width=".600001"
                 >
                     <rect
+                        class="card-rect"
                         transform="matrix(.99684757 -.07934051 .07693352 .99703622 0 0)"
                         x="120.75165"
                         y="70.804726"
@@ -153,10 +153,10 @@
             <g style="--animation-order: 7;" class="logo-card">
                 <g
                     transform="rotate(14.443338,-204.90638,20.945533)"
-                    stroke="#fff"
                     stroke-linecap="round"
                 >
                     <rect
+                        class="card-rect"
                         transform="matrix(.99676425 -.08038049 .07588235 .99711678 0 0)"
                         x="119.99251"
                         y="71.181892"
@@ -194,6 +194,7 @@
                     fill="#8200FF"
                     stroke="#8200FF"
                 />
+                <g class="logo-secondary">
                 <path
                     d="m86.023619 155.11076h-1.813843v-5.43842h1.813843zm-3.627686 1.81385h1.813843v-0.90537c0 0.25114 0.08682 0.46508 0.26355 0.64182 0.176733 0.17673 0.390674 0.26355 0.641821 0.26355h1.813843c0.248047 0 0.461987-0.0868 0.641821-0.26355 0.176733-0.17674 0.26665-0.39068 0.26665-0.64182v-7.25848c0-0.24804-0.08992-0.46198-0.26665-0.64182-0.179834-0.17363-0.393774-0.26355-0.641821-0.26355h-1.813843c-0.251147 0-0.465088 0.0899-0.641821 0.26665-0.176734 0.17984-0.26355 0.39378-0.26355 0.64182v-2.72231l-1.813843 0.90537z"
                 />
@@ -209,6 +210,7 @@
                 <path
                     d="m106.91537 158.73845h3.62768c0.24805 0 0.46199-0.0868 0.64182-0.26665 0.17674-0.17673 0.26665-0.39068 0.26665-0.64182v-9.97459h-1.81384v4.08037l-1.81384 0.90848v-4.98885h-1.81385v7.71116l3.62769-1.81694v3.175h-1.81384v-1.81385l-1.81385 0.90848v1.81074c0 0.25114 0.0868 0.46509 0.26355 0.64182 0.17674 0.17983 0.39068 0.26665 0.64183 0.26665z"
                 />
+                </g>
             </g>
         </g>
     </svg>
@@ -234,9 +236,15 @@
             transform: rotateY(0deg);
         }
     }
-
+    .card-rect{
+        fill: var(--background);
+    }
+    .logo-secondary{
+        fill: var(--text-color); 
+        stroke: var(--text-color);
+    }
     .logo-card {
-        stroke: #fff;
+        stroke: var(--text-color);
         transform-box: fill-box;
         transform: translate(1vh, 12vh);
         animation-name: fly-in, riffle-cards;

@@ -1,17 +1,8 @@
 <script lang="ts">
-    const setTheme = (lightTheme: boolean) => {
-        let background = "#111";
-        let textColor = "#efefef";
-        let panelColor = "#222";
-        if(lightTheme){ 
-            background = "#efefef";
-            textColor = "#111";
-            panelColor = "#eaeaea";
-        }
-        document.documentElement.style.setProperty('--background', background);
-        document.documentElement.style.setProperty('--main-link-color', textColor);
-        document.documentElement.style.setProperty('--outer-panel-color', panelColor);
-
+    const setTheme = (theme: string) => {
+        document.documentElement.style.setProperty('--background', `var(--background-${theme})`);
+        document.documentElement.style.setProperty('--text-color', `var(--text-color-${theme})`);
+        document.documentElement.style.setProperty('--outer-panel-color', `var(--outer-panel-${theme}`);
     }
 </script>
 <style>
@@ -22,7 +13,7 @@
     }
     .light-selector{
         display: block;
-        background-color: #efefcf;
+        background-color: #efefef;
         width: 2em;
         height: 2em;
         border-top-right-radius: 100vw;
@@ -37,7 +28,7 @@
 </style> 
 <body>
     <div>
-    <span on:click={() => setTheme(true)} class="light-selector"></span>
-    <span on:click={() => setTheme(false)} class="dark-selector"></span>
+    <span on:click={() => setTheme('light')} class="light-selector"></span>
+    <span on:click={() => setTheme('dark')} class="dark-selector"></span>
     </div>
 </body>
