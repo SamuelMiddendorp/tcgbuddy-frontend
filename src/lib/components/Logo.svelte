@@ -237,13 +237,16 @@
         }
     }
     .card-rect{
+        transition: all 0.5s ease-in;
         fill: var(--background);
     }
     .logo-secondary{
+        transition: all 0.5s ease-in;
         fill: var(--text-color); 
         stroke: var(--text-color);
     }
     .logo-card {
+        transition : all 0.5s ease-in;
         stroke: var(--text-color);
         transform-box: fill-box;
         transform: translate(1vh, 12vh);
