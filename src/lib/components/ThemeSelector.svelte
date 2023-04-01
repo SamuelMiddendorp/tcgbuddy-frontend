@@ -2,7 +2,7 @@
     const setTheme = (theme: string) => {
         document.documentElement.style.setProperty('--background', `var(--background-${theme})`);
         document.documentElement.style.setProperty('--text-color', `var(--text-color-${theme})`);
-        document.documentElement.style.setProperty('--outer-panel-color', `var(--outer-panel-${theme}`);
+        document.documentElement.style.setProperty('--outer-panel-color', `var(--outer-panel-color-${theme}`);
     }
 </script>
 <style>
