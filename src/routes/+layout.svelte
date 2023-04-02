@@ -8,12 +8,21 @@ import Logo from "../lib/components/Logo.svelte";
         const elem = document.querySelector<HTMLElement>(
             ".function-navigator"
         )!;
+        const links = document.querySelectorAll<HTMLElement>(
+            ".link"
+        )!;
         if (panelOpen) {
-            elem.style.maxWidth = "2em";
+            elem.style.maxWidth = "4em";
+            links.forEach(link => {
+                link.style.display = "none";
+            })
             panelOpen = !panelOpen;
             return;
         }
         elem.style.maxWidth = "12em";
+        links.forEach(link => {
+                link.style.display = "initial";
+        })
         panelOpen = !panelOpen;
     }
 </script>
@@ -35,7 +44,7 @@ import Logo from "../lib/components/Logo.svelte";
         </div>
         <div class="function-navigator panel" on:click={() => togglePanel()}>
             <a href="/"
-                ><span>CARDS</span>
+                ><span class="link">CARDS</span>
                 <svg
                     width="10.452028mm"
                     height="11.600512mm"
@@ -66,7 +75,7 @@ import Logo from "../lib/components/Logo.svelte";
                 </svg>
             </a>
             <a href="/"
-                ><span>CARDS</span>
+                ><span class="link">CARDS</span>
                 <svg
                     width="10.452028mm"
                     height="11.600512mm"
@@ -97,7 +106,7 @@ import Logo from "../lib/components/Logo.svelte";
                 </svg>
             </a>
             <a href="/"
-                ><span>CARDS</span>
+                ><span class="link">CARDS</span>
                 <svg
                     width="10.452028mm"
                     height="11.600512mm"
@@ -128,7 +137,7 @@ import Logo from "../lib/components/Logo.svelte";
                 </svg>
             </a>
             <a href="/"
-                ><span>CARDS</span>
+                ><span class="link">CARDS</span>
                 <svg
                     width="10.452028mm"
                     height="11.600512mm"
@@ -159,7 +168,7 @@ import Logo from "../lib/components/Logo.svelte";
                 </svg>
             </a>
             <a href="/"
-                ><span>CARDS</span>
+                ><span class="link">CARDS</span>
                 <svg
                     width="10.452028mm"
                     height="11.600512mm"

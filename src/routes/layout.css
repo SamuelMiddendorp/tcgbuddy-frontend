@@ -97,6 +97,7 @@
     }
     .function-navigator{
         display: grid;
+        min-width: 2em;
         margin-right: 0 !important; 
         align-content: flex-start;
         overflow: hidden;
