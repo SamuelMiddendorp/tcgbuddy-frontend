@@ -34,5 +34,6 @@
         padding: 1em;
         background-color: var(--inner-panel-color);
         border-radius: var(--border-radius);
+        border-right: 2px solid var(--statement-color);
     }
 </style>
