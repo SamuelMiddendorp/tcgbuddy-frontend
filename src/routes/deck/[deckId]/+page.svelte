@@ -20,7 +20,7 @@
         display: grid;
         grid-auto-columns: max-content;
         grid-auto-flow: column;
-        grid-auto-rows: minmax(15em, max-content);
+        grid-auto-rows: minmax(10em, max-content);
     }
     .deck-container h1 {
         margin-bottom: 1em;
