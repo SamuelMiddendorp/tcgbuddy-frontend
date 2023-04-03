@@ -74,8 +74,8 @@ import Logo from "../lib/components/Logo.svelte";
                     </g>
                 </svg>
             </a>
-            <a href="/"
-                ><span class="link">CARDS</span>
+            <a href="/deck"
+                ><span class="link">DECKS</span>
                 <svg
                     width="10.452028mm"
                     height="11.600512mm"

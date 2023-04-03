@@ -8,16 +8,11 @@
 </div>
 <style>
     .decks-container{
+        width: 100%;
         margin-top: 1em;
         display: grid;
-        grid-auto-columns: minmax(20em, max-content);
+        grid-template-columns: repeat(auto-fit, 10em);
         grid-auto-flow: column;
-        grid-auto-rows: 20em;
-        justify-content: start;
-    }
-    .deck-link{
-        transition: all 0.2s ease-out;
-        padding: 2em;
         margin-right: 1em;
         border-radius: var(--border-radius);
         background-color: var(--inner-panel-color);
