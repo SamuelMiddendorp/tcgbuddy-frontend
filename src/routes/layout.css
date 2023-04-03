@@ -3,16 +3,19 @@
         --text-color-light: #111;
         --background-light: #efefef;
         --outer-panel-color-light: #fdfbff;
+        --inner-panel-color-light: #ffffff;
 
         --text-color-dark: #efefef;
         --background-dark: #111;
         --outer-panel-color-dark: #222;
+        --inner-panel-color-dark: #333;
 
 
 
         --text-color: var(--text-color-dark);
         --background: var(--background-dark);
         --outer-panel-color: var(--outer-panel-color-dark);
+        --inner-panel-color: var(--inner-panel-color-dark);
 
         --border-radius: 0.4em;
         --grid-gap: 1.0em;
