@@ -11,7 +11,7 @@
         width: 100%;
         margin-top: 1em;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
         margin-right: 1em;
         border-radius: var(--border-radius);
     }
@@ -20,8 +20,8 @@
         padding: 1em;
         min-height: 8em;
         min-width: 10em;
-        margin-bottom: 1em;
         margin-right: 1em;
+        margin-bottom: 1em;
         background-color: var(--inner-panel-color);
         border-radius: var(--border-radius);
     }

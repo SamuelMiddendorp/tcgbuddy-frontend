@@ -18,8 +18,7 @@
 <style>
     .deck-container {
         display: grid;
-        grid-auto-columns: max-content;
-        grid-auto-flow: column;
+        grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
         grid-auto-rows: minmax(10em, max-content);
     }
     .deck-container h1 {
@@ -29,8 +28,8 @@
         margin-bottom: 1em;
     }
     .deck-descriptor{
-        justify-self: center;
         margin-right: 1em;
+        margin-bottom: 1em;
         padding: 1em;
         background-color: var(--inner-panel-color);
         border-radius: var(--border-radius);
