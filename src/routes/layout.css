@@ -71,7 +71,7 @@
     }
     .layout-container {
         font-family: 'Ubuntu mono', monospace; 
-        height: 100vh;
+        min-height: 100vh;
         color: var(--text-color);
         background-color: var(--background);
         background-size: 350% 350%;
