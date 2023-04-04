@@ -11,14 +11,22 @@
         width: 100%;
         margin-top: 1em;
         display: grid;
-        grid-template-columns: repeat(auto-fit, 10em);
-        grid-auto-flow: column;
+        grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
         margin-right: 1em;
         border-radius: var(--border-radius);
+    }
+    .deck-link{
+        transition: all 0.2s ease-out;
+        padding: 1em;
+        min-height: 8em;
+        min-width: 10em;
+        margin-bottom: 1em;
+        margin-right: 1em;
         background-color: var(--inner-panel-color);
+        border-radius: var(--border-radius);
     }
     .deck-link:hover{
-        border-radius: 2em;
+        border-radius: 1em;
         background-color: var(--statement-color);
     }
 </style>
