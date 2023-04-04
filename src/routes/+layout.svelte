@@ -42,7 +42,7 @@ import Logo from "../lib/components/Logo.svelte";
                 <a href="/">Logout</a>
             </div>
         </div>
-        <div class="function-navigator panel" on:click={() => togglePanel()}>
+        <div class="function-navigator panel">
             <a href="/"
                 ><span class="link">CARDS</span>
                 <svg
