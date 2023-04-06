@@ -28,11 +28,22 @@
         margin-bottom: 1em;
     }
     .deck-descriptor{
+        position: relative;
         margin-right: 1em;
         margin-bottom: 1em;
         padding: 1em;
         background-color: var(--inner-panel-color);
         border-radius: var(--border-radius);
-        border-right: 2px solid var(--statement-color);
+    }
+    .deck-descriptor::before{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 1em;
+        width: 1em;
+        border-top-right-radius: var(--border-radius);
+        border-bottom-left-radius: var(--border-radius);
+        background-color: var(--statement-color);
     }
 </style>
