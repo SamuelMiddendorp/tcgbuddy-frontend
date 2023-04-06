@@ -16,14 +16,27 @@
         border-radius: var(--border-radius);
     }
     .deck-link{
+        position: relative;
         transition: all 0.2s ease-out;
         padding: 1em;
         min-height: 8em;
         min-width: 10em;
         margin-right: 1em;
+        justify-items: center;
         margin-bottom: 1em;
         background-color: var(--inner-panel-color);
         border-radius: var(--border-radius);
+    }
+    .deck-link::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 1em;
+        width: 1em;
+        border-top-right-radius: var(--border-radius);
+        border-bottom-left-radius: var(--border-radius);
+        background-color: var(--statement-color);
     }
     .deck-link:hover{
         border-radius: 1em;
