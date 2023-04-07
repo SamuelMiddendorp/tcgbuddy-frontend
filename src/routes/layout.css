@@ -99,6 +99,7 @@
         justify-self: end;
     }
     .function-navigator{
+        z-index: 2;
         display: grid;
         min-width: 2em;
         margin-right: 0 !important; 
