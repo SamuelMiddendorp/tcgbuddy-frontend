@@ -18,20 +18,20 @@
 <style>
     .deck-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-        grid-auto-rows: minmax(10em, max-content);
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+        grid-auto-rows: minmax(10rem, max-content);
     }
     .deck-container h1 {
-        margin-bottom: 1em;
+        margin-bottom: 1rem;
     }
     .deck-descriptor h2 {
-        margin-bottom: 1em;
+        margin-bottom: 1rem;
     }
     .deck-descriptor{
         position: relative;
-        margin-right: 1em;
-        margin-bottom: 1em;
-        padding: 1em;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
         background-color: var(--inner-panel-color);
         border-radius: var(--border-radius);
     }
@@ -40,8 +40,8 @@
         position: absolute;
         bottom: 0px;
         left: 0px;
-        height: 1em;
-        width: 1em;
+        height: 1rem;
+        width: 1rem;
         border-top-right-radius: var(--border-radius);
         border-bottom-left-radius: var(--border-radius);
         background-color: var(--statement-color);

@@ -1,30 +1,7 @@
 <script lang="ts">
     import ThemeSelector from "$lib/components/ThemeSelector.svelte";
-import Logo from "../lib/components/Logo.svelte";
+    import Logo from "../lib/components/Logo.svelte";
     import "./layout.css";
-    let panelOpen: boolean = true;
-
-    function togglePanel() {
-        const elem = document.querySelector<HTMLElement>(
-            ".function-navigator"
-        )!;
-        const links = document.querySelectorAll<HTMLElement>(
-            ".link"
-        )!;
-        if (panelOpen) {
-            elem.style.maxWidth = "4em";
-            links.forEach(link => {
-                link.style.display = "none";
-            })
-            panelOpen = !panelOpen;
-            return;
-        }
-        elem.style.maxWidth = "12em";
-        links.forEach(link => {
-                link.style.display = "initial";
-        })
-        panelOpen = !panelOpen;
-    }
 </script>
 
 <svelte:head>

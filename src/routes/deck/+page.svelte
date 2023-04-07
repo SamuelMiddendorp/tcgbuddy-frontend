@@ -9,21 +9,21 @@
 <style>
     .decks-container{
         width: 100%;
-        margin-top: 1em;
+        margin-top: 1rem;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-        margin-right: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        margin-right: 1rem;
         border-radius: var(--border-radius);
     }
     .deck-link{
         position: relative;
         transition: all 0.2s ease-out;
-        padding: 1em;
-        min-height: 8em;
-        min-width: 10em;
-        margin-right: 1em;
+        padding: 1rem;
+        min-height: 8rem;
+        min-width: 8rem;
+        margin-right: 1rem;
         justify-items: center;
-        margin-bottom: 1em;
+        margin-bottom: 1rem;
         background-color: var(--inner-panel-color);
         border-radius: var(--border-radius);
     }
@@ -32,14 +32,14 @@
         position: absolute;
         top: 0px;
         right: 0px;
-        height: 1em;
-        width: 1em;
+        height: 1rem;
+        width: 1rem;
         border-top-right-radius: var(--border-radius);
         border-bottom-left-radius: var(--border-radius);
         background-color: var(--statement-color);
     }
     .deck-link:hover{
-        border-radius: 1em;
+        border-radius: 1rem;
         background-color: var(--statement-color);
     }
 </style>

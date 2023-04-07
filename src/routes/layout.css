@@ -17,8 +17,8 @@
         --outer-panel-color: var(--outer-panel-color-dark);
         --inner-panel-color: var(--inner-panel-color-dark);
 
-        --border-radius: 0.4em;
-        --grid-gap: 1.0em;
+        --border-radius: 0.4rem;
+        --grid-gap: 1rem;
         --statement-color: #8200ff;
     }
     @keyframes gradient {
@@ -36,7 +36,7 @@
     }
     @media only screen and (max-width: 720px) {
         :root{
-            --grid-gap: 0.4em;
+            --grid-gap: 0.4rem;
         }
         .main-content{
             margin-left: var(--grid-gap) !important;
@@ -59,13 +59,13 @@
         .function-navigator a{
             width: 100%;
             justify-self: center;
-            height: 4em;
-            width: 4em;
+            height: 4rem;
+            width: 4rem;
         }
     }
 
     a{
-        font-size: 1em;
+        font-size: 1rem;
         text-decoration: none;
         color: var(--main-link-color);
     }
@@ -81,7 +81,7 @@
         grid-template-rows: max-content 1fr;
     }
     .header{
-        padding: 1em;
+        padding: 1rem;
         margin-bottom: 0 !important;
         grid-column: 1/3;
         grid-row: 1/2;
@@ -90,7 +90,7 @@
         align-items: center;
     }
     .header a{
-        margin-left: 2em;
+        margin-left: 2rem;
     }
     .logo{
         justify-self: start;
@@ -101,7 +101,6 @@
     .function-navigator{
         z-index: 2;
         display: grid;
-        min-width: 2em;
         margin-right: 0 !important; 
         align-content: flex-start;
         overflow: hidden;
@@ -121,14 +120,14 @@
         transition: all 0.4s ease-in-out;
     }
     .function-navigator a{
-        height: 4em;
+        height: 4rem;
         display: grid;
-        padding: 0.4em;
+        padding: 0.4rem;
         grid-template-rows: 1fr;
         grid-template-columns: min-content 1fr;
         align-items: center;
         justify-items: flex-start;
-        font-size: 1em;
+        font-size: 1rem;
         border-radius: var(--border-radius);
         transition: all 0.5s ease-in-out;
     }
