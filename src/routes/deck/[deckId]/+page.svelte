@@ -18,7 +18,7 @@
 <style>
     .deck-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
         grid-auto-rows: minmax(10rem, max-content);
     }
     .deck-container h1 {
