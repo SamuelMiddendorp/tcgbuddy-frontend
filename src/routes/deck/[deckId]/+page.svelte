@@ -6,6 +6,7 @@
     <div class="deck-descriptor">
         <h1>{data.deck.name}</h1>
         <p>{data.deck.description}</p>
+        <p>Difficulty: {data.deck.difficulty}</p>
     </div>
     {#each data.deck.stats as stat}
     <div class="deck-descriptor">

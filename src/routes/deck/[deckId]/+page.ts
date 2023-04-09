@@ -3,6 +3,7 @@ export const load = ({params}) => {
         deck: {
             "name": `deck${params.deckId}`,
             "description": "A nice deck to play that is not hard to learn",
+            "difficulty": "Easy",
             "stats": [
                 {
                     "type": "mainAttacker",
