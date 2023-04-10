@@ -17,7 +17,26 @@ export const load = ({params}) => {
                     "type": "synergySupporter",
                     "card": "Sonia"
                 }
-        ]
+        ],
+            cardList: [
+                {
+                    "id": "swsh1-1",
+                    "image": "https://images.pokemontcg.io/swsh1/1.png" 
+                },
+                {
+                    "id": "swsh1-1",
+                    "image": "https://images.pokemontcg.io/swsh1/1.png" 
+                },
+                {
+                    "id": "swsh1-1",
+                    "image": "https://images.pokemontcg.io/swsh1/1.png" 
+                },
+                {
+                    "id": "swsh1-1",
+                    "image": "https://images.pokemontcg.io/swsh1/1.png" 
+                },
+            ]
+    
         }
     }
 }

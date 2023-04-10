@@ -14,6 +14,11 @@
         <p>{stat.card}</p>
     </div>
     {/each}
+    <div class="deck-viewer">
+        {#each data.deck.cardList as card}
+            <p>{card.id}</p>
+        {/each}
+    </div>
 </div>
 
 <style>
