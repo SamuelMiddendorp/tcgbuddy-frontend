@@ -20,7 +20,7 @@
         {#each data.deck.cardList as card}
             <div class="decklist-card">
                 <p>{card.id}</p>
-                <img src="/images/card_sample.png" alt="Cute pokemon" />
+                <img data-count src="/images/card_sample.png" alt="Cute pokemon" />
             </div>
         {/each}
     </div>
@@ -33,9 +33,14 @@
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     .decklist-card {
+        background-color: var(--inner-panel-color);
+        padding: 1rem;
+        border-radius: var(--border-radius);
+        margin-bottom: 1rem;
+        margin-right: 1rem;
     }
     .decklist-card img{
-        max-width: 20rem;
+        max-width: 12rem;
         width: 100%;
     }
     .deck-descriptors {
