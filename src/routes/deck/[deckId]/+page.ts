@@ -21,18 +21,47 @@ export const load = ({params}) => {
             cardList: [
                 {
                     "id": "swsh1-1",
+                    "count": 2,
                     "image": "https://images.pokemontcg.io/swsh1/1.png" 
                 },
                 {
                     "id": "swsh1-1",
+                    "count": 4,
                     "image": "https://images.pokemontcg.io/swsh1/1.png" 
                 },
                 {
                     "id": "swsh1-1",
+                    "count": 2,
                     "image": "https://images.pokemontcg.io/swsh1/1.png" 
                 },
                 {
                     "id": "swsh1-1",
+                    "count": 2,
+                    "image": "https://images.pokemontcg.io/swsh1/1.png" 
+                },
+                {
+                    "id": "swsh1-1",
+                    "count": 1,
+                    "image": "https://images.pokemontcg.io/swsh1/1.png" 
+                },
+                {
+                    "id": "swsh1-1",
+                    "count": 2,
+                    "image": "https://images.pokemontcg.io/swsh1/1.png" 
+                },
+                {
+                    "id": "swsh1-1",
+                    "count": 1,
+                    "image": "https://images.pokemontcg.io/swsh1/1.png" 
+                },
+                {
+                    "id": "swsh1-1",
+                    "count": 4,
+                    "image": "https://images.pokemontcg.io/swsh1/1.png" 
+                },
+                {
+                    "id": "swsh1-1",
+                    "count": 2,
                     "image": "https://images.pokemontcg.io/swsh1/1.png" 
                 },
             ]
