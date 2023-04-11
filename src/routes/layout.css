@@ -4,11 +4,13 @@
         --background-light: #efefef;
         --outer-panel-color-light: #fdfbff;
         --inner-panel-color-light: #ffffff;
+        --inner-inner-panel-color-light: #ffffff;
 
         --text-color-dark: #efefef;
         --background-dark: #111;
         --outer-panel-color-dark: #222;
         --inner-panel-color-dark: #333;
+        --inner-inner-panel-color-dark: #444;
 
 
 
@@ -16,6 +18,7 @@
         --background: var(--background-dark);
         --outer-panel-color: var(--outer-panel-color-dark);
         --inner-panel-color: var(--inner-panel-color-dark);
+        --inner-inner-panel-color: var(--inner-inner-panel-color-dark);
 
         --border-radius: 0.4rem;
         --grid-gap: 1rem;

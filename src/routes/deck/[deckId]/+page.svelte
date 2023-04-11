@@ -1,4 +1,6 @@
 <script lang="ts">
+    import DeckCard from "$lib/components/DeckCard.svelte";
+
     export let data: any;
 </script>
 
@@ -18,10 +20,7 @@
     </div>
     <div class="deck-viewer">
         {#each data.deck.cardList as card}
-            <div data-count="{card.count}" class="decklist-card">
-                <p>{card.id}</p>
-                <img src="/images/card_sample.jpg" alt="Cute pokemon" />
-            </div>
+                <DeckCard card={card}/>
         {/each}
     </div>
 </div>
@@ -30,34 +29,7 @@
     .deck-viewer {
         position: relative;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    }
-    .decklist-card {
-        position: relative;
-        background-color: var(--inner-panel-color);
-        padding: 1rem;
-        border-radius: var(--border-radius);
-        margin-bottom: 1rem;
-        margin-right: 1rem;
-    }
-    .decklist-card img{
-        position: relative;
-        max-width: 12rem;
-        width: 100%;
-    }
-    .decklist-card::after{
-        content: attr(data-count);
-        position: absolute;
-        font-size: 1.6rem;
-        display: grid;
-        place-content: center;
-
-        top: 0;
-        right: 0;
-        background-color: var(--statement-color);
-        width: 2rem;
-        height: 2rem;
-        border-radius: var(--border-radius);
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     }
     .deck-descriptors {
         display: grid;
