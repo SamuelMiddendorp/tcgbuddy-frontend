@@ -15,6 +15,7 @@
     }
     .decklist-card img{
 
+        border-radius: 0.6rem;
         width: 100%;
         max-width: 12rem;
     }
