@@ -20,7 +20,7 @@
         {#each data.deck.cardList as card}
             <div data-count="{card.count}" class="decklist-card">
                 <p>{card.id}</p>
-                <img src="/images/card_sample.png" alt="Cute pokemon" />
+                <img src="/images/card_sample.jpg" alt="Cute pokemon" />
             </div>
         {/each}
     </div>
