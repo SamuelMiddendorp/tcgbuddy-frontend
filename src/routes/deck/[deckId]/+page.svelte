@@ -13,7 +13,7 @@
             <p>Difficulty: {data.deck.difficulty}</p>
         </div>
         <div class="deck-descriptor">
-            <DeckValidator />
+            <DeckValidator deck={data.deck}/>
         </div>
         {#each data.deck.stats as stat}
             <div class="deck-descriptor">
