@@ -4,7 +4,6 @@ export const load = ({params}) => {
             "name": `deck${params.deckId}`,
             "description": "A nice deck to play that is not hard to learn",
             "difficulty": "Easy",
-            "isValid": true,
             "stats": [
                 {
                     "type": "mainAttacker",
@@ -69,9 +68,9 @@ export const load = ({params}) => {
                     "image": "https://images.pokemontcg.io/swsh1/1.png" 
                 },
                 {
-                    "type": "Trainer",
+                    "type": "Energy",
                     "id": "swsh1-1",
-                    "count": 2,
+                    "count": 42,
                     "image": "https://images.pokemontcg.io/swsh1/1.png" 
                 },
             ]

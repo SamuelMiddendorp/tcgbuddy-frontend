@@ -1,8 +1,18 @@
 <script lang="ts">
 let valid: boolean = false;
+let cardCount: number = 0;
     export let deck;
     $:{
-        valid = deck.isValid
+       valid = validateDeck(deck); 
+    }
+    let validateDeck = (deckToCheck: any) => {
+        deckToCheck.cardList.forEach(card => {
+            cardCount += card.count;
+        });
+        return cardCount == 60 ? true : false;
     }
 </script>
-<div>{valid};legal</div>
+<h2>
+    Validations:
+</h2>
+<div>valid: {valid}; card count: {cardCount};legality: legal</div>
