@@ -238,7 +238,7 @@
     }
     .card-rect{
         transition: all 0.5s ease-in;
-        fill: var(--background);
+        fill: var(--outer-panel-color);
     }
     .logo-secondary{
         transition: all 0.5s ease-in;
