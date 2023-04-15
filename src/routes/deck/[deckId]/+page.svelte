@@ -23,15 +23,15 @@
             </div>
         {/each}
         <div class="deck-descriptor">
-            <h2 style="float: right">Trainers</h2>
+            <h2>Trainers</h2>
             <CardDistribution cardType={"Trainer"} deck={data.deck}/>
         </div>
         <div class="deck-descriptor">
-            <h2 style="float: right">Pokemon</h2>
+            <h2>Pokemon</h2>
             <CardDistribution cardType={"Pokemon"} deck={data.deck}/>
         </div>
         <div class="deck-descriptor">
-            <h2 style="float: right">Energy</h2>
+            <h2>Energy</h2>
             <CardDistribution cardType={"Energy"} deck={data.deck}/>
         </div>
     </div>
