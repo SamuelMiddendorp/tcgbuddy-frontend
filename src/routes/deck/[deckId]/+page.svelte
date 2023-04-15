@@ -25,6 +25,12 @@
         <div class="deck-descriptor">
             <CardDistribution cardType={"Trainer"} deck={data.deck}/>
         </div>
+        <div class="deck-descriptor">
+            <CardDistribution cardType={"Pokemon"} deck={data.deck}/>
+        </div>
+        <div class="deck-descriptor">
+            <CardDistribution cardType={"Energy"} deck={data.deck}/>
+        </div>
     </div>
     <div class="deck-viewer">
         {#each data.deck.cardList as card}
