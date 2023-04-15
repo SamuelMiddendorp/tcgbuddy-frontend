@@ -1,6 +1,7 @@
 <script lang="ts">
     import DeckCard from "$lib/components/DeckCard.svelte";
     import DeckValidator from "$lib/components/DeckValidator.svelte";
+    import CardDistribution from "$lib/components/CardDistribution.svelte";
 
     export let data: any;
 </script>
@@ -21,6 +22,9 @@
                 <p>{stat.card}</p>
             </div>
         {/each}
+        <div class="deck-descriptor">
+            <CardDistribution cardType={"Trainer"} deck={data.deck}/>
+        </div>
     </div>
     <div class="deck-viewer">
         {#each data.deck.cardList as card}
