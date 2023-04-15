@@ -47,11 +47,11 @@
     }
     </style>
 
-            <div data-count="{card.count}" class="decklist-card">
+            <div data-count="{card.count}" class="decklist-card shadow">
                 <img src="/images/card_sample.jpg" alt="Cute pokemon" />
                 <div class="card-info">
-                    <p>{card.type}</p>
-                    <p>Some info on the card</p>    
-                    <p>Some more info on the card</p>    
+                    <p class="shadow">{card.type}</p>
+                    <p class="shadow">Some info on the card</p>    
+                    <p class="shadow">Some more info on the card</p>    
                 </div>
             </div>

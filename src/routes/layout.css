@@ -142,6 +142,9 @@
         grid-column: 2/3;
         grid-row: 2/3;
     }
+    .shadow{
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
     .panel{
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
         background-color: var(--outer-panel-color);

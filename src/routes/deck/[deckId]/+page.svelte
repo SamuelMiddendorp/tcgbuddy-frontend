@@ -8,29 +8,29 @@
 
 <div class="deck-container">
     <div class="deck-descriptors">
-        <div class="deck-descriptor">
+        <div class="deck-descriptor shadow">
             <h1>{data.deck.name}</h1>
             <p>{data.deck.description}</p>
             <p>Difficulty: {data.deck.difficulty}</p>
         </div>
-        <div class="deck-descriptor">
+        <div class="deck-descriptor shadow">
             <DeckValidator deck={data.deck}/>
         </div>
         {#each data.deck.stats as stat}
-            <div class="deck-descriptor">
+            <div class="deck-descriptor shadow">
                 <h2>{stat.type}</h2>
                 <p>{stat.card}</p>
             </div>
         {/each}
-        <div class="deck-descriptor">
+        <div class="deck-descriptor shadow">
             <h2>Trainers</h2>
             <CardDistribution cardType={"Trainer"} deck={data.deck}/>
         </div>
-        <div class="deck-descriptor">
+        <div class="deck-descriptor shadow">
             <h2>Pokemon</h2>
             <CardDistribution cardType={"Pokemon"} deck={data.deck}/>
         </div>
-        <div class="deck-descriptor">
+        <div class="deck-descriptor shadow">
             <h2>Energy</h2>
             <CardDistribution cardType={"Energy"} deck={data.deck}/>
         </div>
