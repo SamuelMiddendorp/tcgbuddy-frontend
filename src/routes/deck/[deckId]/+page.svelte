@@ -2,12 +2,13 @@
     import DeckCard from "$lib/components/DeckCard.svelte";
     import DeckValidator from "$lib/components/DeckValidator.svelte";
     import CardDistribution from "$lib/components/CardDistribution.svelte";
-
     export let data: any;
+    function deleteDeckCardById(cardId: string){
+        data.deck.cardList = data.deck.cardList.filter(x => x.id != cardId);
+    }
 </script>
 
 <div class="deck-container">
-    <button on:click={() => data.deck.cardList = data.deck.cardList.splice(0, data.deck.cardList.length - 1)}>Button</button>
     <div class="deck-descriptors">
         <div class="deck-descriptor shadow">
             <h1>{data.deck.name}</h1>
@@ -38,7 +39,7 @@
     </div>
     <div class="deck-viewer">
         {#each data.deck.cardList as card}
-                <DeckCard card={card}/>
+                 <DeckCard deleteFunc={deleteDeckCardById} card={card}/>
         {/each}
     </div>
 </div>

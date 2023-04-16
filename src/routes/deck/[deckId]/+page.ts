@@ -27,49 +27,49 @@ export const load = ({params}) => {
                 },
                 {
                     "type": "Trainer",
-                    "id": "swsh1-1",
+                    "id": "swsh1-2",
                     "count": 4,
                     "image": "https://images.pokemontcg.io/swsh1/1.png" 
                 },
                 {
                     "type": "Pokemon",
-                    "id": "swsh1-1",
+                    "id": "swsh1-3",
                     "count": 2,
                     "image": "https://images.pokemontcg.io/swsh1/1.png" 
                 },
                 {
                     "type": "Energy",
-                    "id": "swsh1-1",
+                    "id": "swsh1-4",
                     "count": 2,
                     "image": "https://images.pokemontcg.io/swsh1/1.png" 
                 },
                 {
                     "type": "Pokemon",
-                    "id": "swsh1-1",
+                    "id": "swsh1-5",
                     "count": 1,
                     "image": "https://images.pokemontcg.io/swsh1/1.png" 
                 },
                 {
                     "type": "Pokemon",
-                    "id": "swsh1-1",
+                    "id": "swsh1-6",
                     "count": 2,
                     "image": "https://images.pokemontcg.io/swsh1/1.png" 
                 },
                 {
                     "type": "Energy",
-                    "id": "swsh1-1",
+                    "id": "swsh1-7",
                     "count": 1,
                     "image": "https://images.pokemontcg.io/swsh1/1.png" 
                 },
                 {
                     "type": "Energy",
-                    "id": "swsh1-1",
+                    "id": "swsh1-8",
                     "count": 4,
                     "image": "https://images.pokemontcg.io/swsh1/1.png" 
                 },
                 {
                     "type": "Energy",
-                    "id": "swsh1-1",
+                    "id": "swsh1-9",
                     "count": 42,
                     "image": "https://images.pokemontcg.io/swsh1/1.png" 
                 },

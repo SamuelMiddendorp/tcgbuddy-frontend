@@ -1,5 +1,6 @@
- <script lang="TS">
-    export let card;
+ <script lang="ts">
+    export let card: any;
+    export let deleteFunc = (id: string) => {};
  </script>
  <style>
     .decklist-card {
@@ -33,6 +34,20 @@
         height: 2rem;
         border-radius: var(--border-radius);
     }
+    .remove-button{
+        cursor: pointer;
+        position: absolute;
+        font-size: 1.6rem;
+        display: grid;
+        place-content: center;
+        opacity: 0.6;
+        bottom: 0;
+        right: 0;
+        background-color: var(--statement-color);
+        width: 2rem;
+        height: 2rem;
+        border-radius: var(--border-radius);
+    }
     .card-info{
         position: relative;
         align-content: start;
@@ -46,9 +61,9 @@
         border-radius: var(--border-radius); 
     }
     </style>
-
             <div data-count="{card.count}" class="decklist-card shadow">
                 <img src="/images/card_sample.jpg" alt="Cute pokemon" />
+                <p on:click={() => deleteFunc(card.id)} class="remove-button">-</p>
                 <div class="card-info">
                     <p class="shadow">{card.type}</p>
                     <p class="shadow">Some info on the card</p>    
