@@ -7,6 +7,7 @@
 </script>
 
 <div class="deck-container">
+    <button on:click={() => data.deck.cardList = data.deck.cardList.splice(0, data.deck.cardList.length - 1)}>Button</button>
     <div class="deck-descriptors">
         <div class="deck-descriptor shadow">
             <h1>{data.deck.name}</h1>

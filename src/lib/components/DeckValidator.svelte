@@ -1,11 +1,12 @@
 <script lang="ts">
 let valid: boolean = false;
-let cardCount: number = 0;
+let cardCount: number;
     export let deck;
     $:{
        valid = validateDeck(deck); 
     }
     let validateDeck = (deckToCheck: any) => {
+        cardCount = 0;
         deckToCheck.cardList.forEach(card => {
             cardCount += card.count;
         });
