@@ -48,7 +48,7 @@
     .deck-viewer{
         position: relative;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     }
     .deck-descriptors {
         display: grid;

@@ -19,7 +19,6 @@
 
 <style>
    .cardAmountPie {
-      transition: all 0.4s ease-out;
       position: relative;
       width: 50%;
       aspect-ratio: 1;

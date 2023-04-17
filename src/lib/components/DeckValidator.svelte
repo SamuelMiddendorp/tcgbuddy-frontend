@@ -10,7 +10,7 @@ let cardCount: number;
         deckToCheck.cardList.forEach(card => {
             cardCount += card.count;
         });
-        return cardCount == 60 ? true : false;
+        return cardCount == 60;
     }
 </script>
 <h2>
